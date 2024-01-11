@@ -240,7 +240,7 @@ div .navbar-toggler{
   margin: 3em;  
 }
 .menu-item {
- 
+  min-width: 100px;/* Asegúrate de que los elementos hijos sean lo suficientemente anchos */
   padding: 10px;
   background-color: #fff;
   overflow: hidden;
@@ -249,6 +249,10 @@ div .navbar-toggler{
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
 }
+
+
+
+
 .menu-item:hover {
  
   box-shadow: rgba(0, 0, 0, 0.226) 0px 6px 16px;
@@ -1074,11 +1078,7 @@ border-radius: 25px;
 /* MENY Y HORARIOS */
 /*******************/
   
-.content-item{
-  width: 50rem;
-  overflow-x: auto;
-  white-space: nowrap;
-}
+
 /* BARRA DE SCROOL DEL MENU Y DE LA CARTA */
 .menu-container::-webkit-scrollbar {
   background-color: #fafafa;
