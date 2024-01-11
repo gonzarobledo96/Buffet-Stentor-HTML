@@ -360,6 +360,7 @@ gap: 16px;
   border: 1px solid transparent; /* Establece un borde transparente por defecto */
   border-radius: 10px;
 }
+
 .menu-item .boton-verEnPedidosYa:hover{
   background-color:  white;
   color: rgb(234, 4, 78);
@@ -724,15 +725,17 @@ padding: 3em 0em 0em 0em;
 .iconos{
   font-size: 2em;
 }
+.menu-item{
+  width: 200px; /* O ajusta según sea necesario */
+}
+
 .menu-item h3 {
   font-size: 14px;
 }
 .price {
   font-size: 1.5em;
 }
-  .star {
-    font-size: 20px;
-  }
+  
   .porcentaje-valor-producto{
     font-size: 10px;
     padding: 4px 8px;
@@ -1188,28 +1191,4 @@ border-radius: 25px;
   padding:1.5em;
 }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menuu {
-  background-color:rgb(255, 147, 59);
-  overflow-x: auto;
-  white-space: nowrap;
 }
