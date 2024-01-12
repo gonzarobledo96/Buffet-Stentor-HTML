@@ -9,7 +9,6 @@ body {
   background-color: #fafafa;
 }
   
-  
 
 
 /* *********************/
@@ -37,12 +36,6 @@ div .navbar-toggler{
   .navbar-toggler[aria-expanded="false"] .fa-times {
     display: none;
   }
-
-
-
-
-
-
   .whatsapp-link {
      position: fixed;
      width: 50px;
@@ -113,7 +106,6 @@ div .navbar-toggler{
 }
 
 
-
 /********************/
 /* NAVBAR-PRINCIPAL */
 /********************/
@@ -153,7 +145,6 @@ div .navbar-toggler{
   display: block; /* Para que ocupe el ancho completo */
   text-align: center;
 }
-
 .nav-item a {
     color: white;
   text-decoration: none;
@@ -226,15 +217,18 @@ div .navbar-toggler{
 }
 
 
-
 /*******************/
 /* MENY Y HORARIOS */
 /*******************/
-
-
+.content-item {
+  display: none;
+}
+#Pizzas {
+  display: block;
+}
 .menu .menu-button.selected {
-  color: rgb(226, 29, 38); 
-  border-bottom: solid 3px  rgb(226, 29, 38); 
+  color: rgb(226, 29, 38);
+  border-bottom: solid 3px rgb(226, 29, 38);
 }
 .fondoDeLosPrecios{
   margin: 3em;  
@@ -249,15 +243,9 @@ div .navbar-toggler{
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
 }
-
-
-
-
 .menu-item:hover {
- 
   box-shadow: rgba(0, 0, 0, 0.226) 0px 6px 16px;
 }
-
 .menu-item h3 {
   padding-top: 10px;
 font-size: 1.5em;
@@ -281,11 +269,7 @@ justify-content: center;
   font-family: 'Montserrat', sans-serif;
 }
 .menu-item img {
-/* width: 100%; */
-/* height: 150; */
-/* margin-right: 20px; */
  border-radius: 25px; 
-
 }
 .card__preview img:hover {
   transform: scale(1.15);
@@ -295,31 +279,16 @@ display: grid;
  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
 grid-template-columns: repeat(5, 1fr);/*  5 columnas con igual fracción del ancho */
 gap: 16px;
-
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /********************/
 /* MENU DE LA CARTA */
 /********************/
-
-.iconos{
-  font-size: 3em;
-}
 .menu .menu-button{
   border-bottom: solid 3px transparent;
   transition: border-bottom 0.1s ease;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 .menu button {
   color: #26235E;
@@ -333,7 +302,7 @@ gap: 16px;
 .menu button:hover{
   color: rgb(226, 29, 38); 
   transition: 0.2s;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 /* BOTON DE PEDIDOS YA */
 .menu-item .condimentos{
@@ -341,11 +310,9 @@ gap: 16px;
   font-weight: 600;
   color: #555;
 }
-
 .condimentos-container {
   text-align-last: center;
 }
-
 .menu-item .boton-verEnPedidosYa{
   font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -375,19 +342,10 @@ gap: 16px;
   --like: #FF3040;
 }
 
-
-/* .content-item{
-  width: 80rem;
-  overflow-x: auto;
-  white-space: nowrap;
-} */
-
-
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 16px;
 }
 .card__preview {
-  /* height: 12rem; */
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -401,7 +359,6 @@ gap: 16px;
 }
 .card:hover .card__preview img {
   transform: scale(1.15);
-  
 }
 .card__price {
   background-color: var(--white);
@@ -416,11 +373,9 @@ gap: 16px;
   /* margin: 0px 0px 30px; */
 }
 button.card__btn{
-  /* background-color: #19b552; */
   margin: 0px 0px 0px;
   border-radius: 25px;
 }
-
 .card__btn {
   border: none;
   background-color: transparent;
@@ -430,14 +385,12 @@ button.card__btn{
   justify-content: center;
   align-items: center;
 }
-
 .card__btn svg {
   height: 2rem;
   width: 2rem;
   stroke: var(--text);
   stroke-width: 1.5px;
 }
-
 .card__btn--like svg {
   stroke: var(--like);
   fill: var(--like);
@@ -445,21 +398,13 @@ button.card__btn{
 
 
 
-
-
-
-
-
-
-
-
-
-/*******************/
-/* Promociones.css */
-/*******************/
+/***************/
+/* PROMOCIONES */
+/***************/
 .promociones-container {
  padding: 20px;
   background-color: #26235E;
+  margin-bottom: 3rem;
 }
 .promocion-imagen {
   height: auto;
@@ -488,7 +433,7 @@ button.card__btn{
 /* EVENTOS */
 /***********/
 .imagen-evento{
-background-image: url(/src/assets/components/img/dsBuffer.jpg);
+background-image: url(/img/dsBuffer.jpg);
   background-size: cover;
   background-position: center center;
   height: 60vh;
@@ -527,12 +472,6 @@ transition: 0.2s;
 /***************/
 /* Galeria.css */
 /***************/
-.galeria h1{
-padding: 3em 0em 0em 0em;
-  color: #ffc107;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 2.6em;
-}
 .galeria-container {
   background-color: #ececec;
   padding: 4em 3em 3em 3em;
@@ -617,6 +556,7 @@ padding: 3em 0em 0em 0em;
   .nav-item a {
     font-size: 12px;
   }
+
 }
 
 /* probando */
@@ -627,6 +567,8 @@ padding: 3em 0em 0em 0em;
   .nav-item a {
     font-size: 12px;
   }
+
+ 
 }
 /**********************************************************/
 /* 991PX */
@@ -651,8 +593,6 @@ padding: 3em 0em 0em 0em;
   border-color: rgb(226, 29, 38);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 }
-
-
   .fondo-del-nav img{
    width: 40%;
    padding: 20px 0px;
@@ -702,7 +642,10 @@ padding: 3em 0em 0em 0em;
 /*******************/
 /* MENY Y HORARIOS */
 /*******************/
-
+.menu .logos-menu{
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .menu-container {
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -892,7 +835,10 @@ border-radius: 25px;
 /*******************/
 /* MENY Y HORARIOS */
 /*******************/
-  
+.menu .logos-menu{
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .menu-container {
   display: grid;
   grid-template-columns: repeat(5,1fr);
@@ -913,7 +859,7 @@ border-radius: 25px;
 /* MENU DE LA CARTA */
 /********************/
 .iconos{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .menu-item h3 {
   font-size: 14px;
@@ -1026,8 +972,6 @@ border-radius: 25px;
   margin: 8px 10px;
   padding: 10px 8px 0px;
 }
-
-
 .fondo-del-nav {
   border-color: rgb(226, 29, 38);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
@@ -1080,14 +1024,17 @@ border-radius: 25px;
 /*******************/
 /* MENY Y HORARIOS */
 /*******************/
-  
-
+.menu .logos-menu{
+  overflow-x: auto;
+  white-space: nowrap;
+}
 /* BARRA DE SCROOL DEL MENU Y DE LA CARTA */
 .menu-container::-webkit-scrollbar {
   background-color: #fafafa;
+  
 }
  .logos-menu::-webkit-scrollbar {
-  background-color: #c21e1e;
+  background-color: #fafafa;
 }
 .fondoDeLosPrecios {
   margin: 1em;
@@ -1096,7 +1043,7 @@ border-radius: 25px;
 /* MENU DE LA CARTA */
 /********************/
 .iconos{
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .menu-item h3 {
   font-size: 14px;
