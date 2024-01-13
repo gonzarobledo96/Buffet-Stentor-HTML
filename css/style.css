@@ -1101,13 +1101,16 @@ border-radius: 25px;
   font-size: 10px;
 }
 .boton-whatsapp {
+  /* justify-content: center;
+  display: flex; */
+
   width: 100%;
   background-color: #25d366;
 color: white;
- padding: 2px 12px;
+ padding: 12px 12px;
  margin: 0px 0px;
 text-decoration: none;
-font-size: 10px;
+font-size: 1em;
 cursor: pointer;
 border: 1px solid transparent; /* Establece un borde transparente por defecto */
 border-radius: 25px;
