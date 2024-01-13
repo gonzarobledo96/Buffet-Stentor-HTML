@@ -299,6 +299,9 @@ gap: 16px;
   transition: 0.2s;
   font-weight: 600;
 }
+.menu-button i{
+  font-size: 3em;
+}
 .menu button:hover{
   color: rgb(226, 29, 38); 
   transition: 0.2s;
@@ -556,20 +559,40 @@ transition: 0.2s;
   .nav-item a {
     font-size: 12px;
   }
-
+/*******************/
+/* MENY Y HORARIOS */
+/*******************/
+.menu .logos-menu{
+  overflow-x: auto;
+  white-space: nowrap;
+}
 }
 
-/* probando */
-@media (max-width: 1012px) {
-  .menu-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .nav-item a {
-    font-size: 12px;
-  }
 
- 
+
+@media screen and (min-width: 992px) and (max-width: 1211px){
+/*******************/
+/* MENY Y HORARIOS */
+/*******************/
+.menu .logos-menu{
+  overflow-x: auto;
+  white-space: nowrap;
 }
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 16px;
+  overflow-x: auto;
+}
+
+.menu-item .boton-verEnPedidosYa {
+  
+  font-size: 10px;
+
+}
+}
+
+
 /**********************************************************/
 /* 991PX */
 /**********************************************************/
@@ -579,6 +602,7 @@ transition: 0.2s;
 /********************/
 .container-fluid{
   background-color: #ffffff;
+  padding: 0px 30px;
 }
 .nav-item a {
   color: black;
@@ -597,13 +621,6 @@ transition: 0.2s;
    width: 40%;
    padding: 20px 0px;
     }
-    #logoresponsive {
-      position: fixed;
-  }
-  #logoresponsive img {
-    margin-left: 10px;
-    max-width: 60%; 
-}
 .BuffetStentor{
   font-size: 2em;
 }
@@ -665,20 +682,21 @@ transition: 0.2s;
 /********************/
 /* MENU DE LA CARTA */
 /********************/
-.iconos{
+.menu-button{
+  font-size: 1em;
+}
+.menu-button i{
   font-size: 2em;
 }
 .menu-item{
   width: 200px; /* O ajusta según sea necesario */
 }
-
 .menu-item h3 {
   font-size: 14px;
 }
 .price {
   font-size: 1.5em;
 }
-  
   .porcentaje-valor-producto{
     font-size: 10px;
     padding: 4px 8px;
@@ -772,6 +790,7 @@ border-radius: 25px;
 /********************/
 .container-fluid{
   background-color: #ffffff;
+  padding: 0px 30px;
 }
 .nav-item a {
   color: black;
@@ -790,13 +809,6 @@ border-radius: 25px;
    width: 40%;
    padding: 20px 0px;
     }
-    #logoresponsive {
-      position: fixed;
-  }
-  #logoresponsive img {
-    margin-left: 10px;
-    max-width: 60%; 
-}
 .BuffetStentor{
   font-size: 2em;
 }
@@ -858,9 +870,13 @@ border-radius: 25px;
 /********************/
 /* MENU DE LA CARTA */
 /********************/
-.iconos{
-  font-size: 1.5em;
+.menu-button{
+  font-size: 1em;
 }
+.menu-button i{
+  font-size: 2em;
+}
+
 .menu-item h3 {
   font-size: 14px;
 }
@@ -963,6 +979,7 @@ border-radius: 25px;
 /********************/
 .container-fluid{
   background-color: #ffffff;
+  padding: 0px 30px;
 }
 .nav-item a {
   color: black;
@@ -979,13 +996,6 @@ border-radius: 25px;
   .fondo-del-nav img{
    width: 40%;
     }
-    #logoresponsive {
-      position: fixed;
-  }
-  #logoresponsive img {
-    margin-left: 10px;
-    max-width: 60%; 
-}
 .BuffetStentor{
   font-size: 1em;
 }
@@ -1031,7 +1041,6 @@ border-radius: 25px;
 /* BARRA DE SCROOL DEL MENU Y DE LA CARTA */
 .menu-container::-webkit-scrollbar {
   background-color: #fafafa;
-  
 }
  .logos-menu::-webkit-scrollbar {
   background-color: #fafafa;
@@ -1042,8 +1051,11 @@ border-radius: 25px;
 /********************/
 /* MENU DE LA CARTA */
 /********************/
-.iconos{
-  font-size: 1.5em;
+.menu-button{
+  font-size: 1em;
+}
+.menu-button i{
+  font-size: 2em;
 }
 .menu-item h3 {
   font-size: 14px;
