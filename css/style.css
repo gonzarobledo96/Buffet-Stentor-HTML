@@ -113,8 +113,13 @@ div .navbar-toggler{
   display: flex;
   justify-content: center;
   align-items: center; 
-  margin-left: auto; /* Empuja los elementos del menú al centro */
 }
+
+.collapse{
+  display: flex;
+  justify-content: center;
+}
+
 .container-fluid{
     padding: 8px 0px;
 }
@@ -145,6 +150,19 @@ div .navbar-toggler{
   display: block; /* Para que ocupe el ancho completo */
   text-align: center;
 }
+
+
+/* .navbar-expand-lg {
+ background-color: #e44d26;
+} */
+
+
+
+
+
+
+
+
 .nav-item a {
     color: white;
   text-decoration: none;
@@ -997,6 +1015,9 @@ border-radius: 25px;
   .fondo-del-nav img{
    width: 40%;
     }
+    .container-fluid{
+      padding: 8px 0px;
+  }
 .BuffetStentor{
   font-size: 1em;
 }
